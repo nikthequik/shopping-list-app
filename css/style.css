@@ -8,10 +8,12 @@ body {
 
 #title {
 	padding-top: 0;
+	font-family: 'Indie Flower', sans-serif;
     font-size: 5em;
     position: relative;
     margin: 0;
-    top: 1em;
+    top: 0.85em;
+    padding-left: 3em;
 }
 
 .addItem {	
@@ -31,8 +33,14 @@ body {
     position: relative;
     top: 10em;
     padding: 1em;
+    font-family: 'Indie Flower', sans-serif;
+}
+
+.item-box {
+	padding: 1em;
 }
 
 .item {
-	padding: 1em;
+	padding-left: 1em;
+	margin: 0;
 }
