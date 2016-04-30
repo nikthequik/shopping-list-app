@@ -6,21 +6,28 @@ body {
 	background-color: darkgreen;
 }
 
+#title {
+	
+}
+
 .addItem {	
 	width: 10em;
     height: 10em;
     background-color: black;
     float: right;
     margin-right: 10em;
-    margin-top: 6em;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .list {
-	width: 70%;
+	width: 97.5%;
+    position: relative;
+    top: 10em;
+    padding-right: 8em;
+    padding: 1em;
 }
 
 .item {
-	
+	padding: 1em;
 }
