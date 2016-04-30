@@ -1,6 +1,17 @@
 * {
 	outline: 1px solid red;
 }
-.addItem {
 
+body {
+	background-color: darkgreen;
 }
+
+.addItem {	
+	width: 10em;
+    height: 10em;
+    background-color: black;
+    float: right;
+    margin-right: 10em;
+    margin-top: 6em;
+    border-radius: 50%;
+}	
