@@ -7,15 +7,21 @@ body {
 }
 
 #title {
-	
+	padding-top: 0;
+    font-size: 5em;
+    position: relative;
+    margin: 0;
+    top: 1em;
 }
 
 .addItem {	
 	width: 10em;
     height: 10em;
+    position: relative;
     background-color: black;
     float: right;
-    margin-right: 10em;
+    right: 5em;
+    top: 3em;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -24,7 +30,6 @@ body {
 	width: 97.5%;
     position: relative;
     top: 10em;
-    padding-right: 8em;
     padding: 1em;
 }
 
