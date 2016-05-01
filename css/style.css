@@ -26,6 +26,7 @@ body {
     top: 3em;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 100;
 }
 
 .list {
