@@ -5,4 +5,7 @@ $(function() {
 		$('.item-box').prepend(newItem);
 		document.getElementById("inputItem").value = "Enter another item...";
 		});
+	$('#inputItem').on('focus', function() {
+		document.getElementById("inputItem").value = "";
+	});
 });
