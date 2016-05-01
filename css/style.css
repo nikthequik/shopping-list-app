@@ -34,13 +34,19 @@ body {
     top: 10em;
     padding: 1em;
     font-family: 'Indie Flower', sans-serif;
+
 }
 
 .item-box {
 	padding: 1em;
+	background-color: black;
+	border-radius: 5px;
 }
 
 .item {
 	padding-left: 1em;
 	margin: 0;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid black;
 }
