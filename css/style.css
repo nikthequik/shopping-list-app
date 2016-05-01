@@ -39,6 +39,7 @@ body {
     width: 50%;
     height: 2em;
     border-radius: 13px;
+    border: 2px solid black;
     font-family: 'Indie Flower', sans-serif;
 }
 
