@@ -3,7 +3,7 @@
 } */
 
 body {
-	background-color: darkgreen;
+	background-color: mediumslateblue;
 }
 
 #title {
@@ -65,7 +65,7 @@ body {
 	border: 1px solid black;
 	font-size: 2em;
 }
-#remove {
+.remove {
 	
 	z-index: 100;
 	float: right;
