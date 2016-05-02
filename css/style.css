@@ -3,7 +3,8 @@
 } */
 
 body {
-	background-color: darkgreen;
+	background-color: mediumslateblue;
+	padding: 1em;
 }
 
 #title {
@@ -50,12 +51,14 @@ body {
     padding: 1em;
     font-family: 'Indie Flower', sans-serif;
 
+
 }
 
 .item-box {
 	padding: 1em;
 	background-color: black;
 	border-radius: 5px;
+	min-height: 3em;
 }
 
 .item {
@@ -64,4 +67,15 @@ body {
 	background-color: white;
 	border-radius: 5px;
 	border: 1px solid black;
+	font-size: 2em;
+}
+.remove {
+	
+	z-index: 100;
+	float: right;
+	clear: right;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: white;
+	font-size: 0.9em;
 }
