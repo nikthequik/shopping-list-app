@@ -8,7 +8,7 @@ $(function() {
 			var newItem = $('<div class="item" id="item' + itemNum + '"><h1></h1></div>').text(input);
 			console.log(newItem);
 			$('.item-box').prepend(newItem);
-			$('#item' + itemNum).append('<button class="remove" onclick="kill()">Remove</button>');
+			$('#item' + itemNum).append('<button class="remove" onclick="kill(this)">Remove</button>');
 			itemNum += 1;
 			document.getElementById("inputItem").value = "Enter another item...";
 		}
@@ -21,9 +21,9 @@ $(function() {
 
 
 });
-function kill() {
-		$('.remove').on('click', (function () {
-			console.log('fire');
-		$(this).parent().remove();
-		}));
+ var kill = function kill(item) {
+		
+		console.log(this);
+		$(item).parent().remove();
+		
 	};
