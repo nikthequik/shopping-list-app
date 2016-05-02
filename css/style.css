@@ -1,15 +1,21 @@
 /* * {
 	outline: 1px solid red;
 } */
-
+html, body {
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Indie Flower', sans-serif;
+}
 body {
 	background-color: mediumslateblue;
-	padding: 1em;
+
 }
 
 #title {
 	padding-top: 0;
-	font-family: 'Indie Flower', sans-serif;
     font-size: 5em;
     position: relative;
     margin: 0;
@@ -41,7 +47,7 @@ body {
     height: 2em;
     border-radius: 13px;
     border: 2px solid black;
-    font-family: 'Indie Flower', sans-serif;
+    
 }
 
 .list {
@@ -49,9 +55,6 @@ body {
     position: relative;
     top: 1.6em;
     padding: 1em;
-    font-family: 'Indie Flower', sans-serif;
-
-
 }
 
 .item-box {
