@@ -4,7 +4,7 @@ $(function() {
 	$('.addItem').on('click', function() {
 		var input = document.getElementById("inputItem").value;
 		console.log(input);
-		if (input != "") {
+		if (input != "" && input != "Enter another item..." && input != "Enter an item...") {
 			var newItem = $('<div class="item" id="item' + itemNum + '"><h1></h1></div>').text(input);
 			console.log(newItem);
 			$('.item-box').prepend(newItem);
