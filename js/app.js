@@ -1,3 +1,14 @@
+var shoppingList = {
+	items: []
+};
+localStorage.setItem(123, shoppingList);
+console.log(localStorage.getItem("123"))
+var shoppingItem = {
+	name: "",
+	state: false,
+	remove: false
+};
+
 $(function() {
 
 	var itemNum = 1;
@@ -18,30 +29,31 @@ $(function() {
 	$('#inputItem').on('focus', function() {
 		$(this).val("");
 	});
-
-
-
-
-
 });
-var kill = function kill(item) {
+
+
+function kill(item) {
 	console.log(this);
 	$(item).parent().remove();
 	};
 
-var filter = function filter () {
+function filter () {
+	console.log($('#filter'));
 	$('.item-box').children('.item').each(function() {
-		console.log(this.children[0].checked);
-		console.log($(this).children('.check').checked);
-		if (this.children[0].checked) {
-			$(this).toggle();
+		/*console.log(this.children[0].checked);
+		console.log($('#filter').checked);*/
+		if (this.children[0].checked === $('#filter')[0].checked) {
+			$(this).show();
 		}
-		/*else if (!this.children[0].checked) {
-			$(this).toggle();
-		}*/
-		/*if ($(this).children('.check').checked) {
+		else {
+			console.log($(this));
 			$(this).hide();
-		}*/
-	});
-	};
-
+		}
+	/*else if (!this.children[0].checked) {
+		$(this).toggle();
+	}*/
+	/*if ($(this).children('.check').checked) {
+		$(this).hide();
+	}*/
+});
+};
