@@ -21,10 +21,27 @@ $(function() {
 
 
 
+
+
 });
- var kill = function kill(item) {
-		
-		console.log(this);
-		$(item).parent().remove();
-		
+var kill = function kill(item) {
+	console.log(this);
+	$(item).parent().remove();
 	};
+
+var filter = function filter () {
+	$('.item-box').children('.item').each(function() {
+		console.log(this.children[0].checked);
+		console.log($(this).children('.check').checked);
+		if (this.children[0].checked) {
+			$(this).toggle();
+		}
+		/*else if (!this.children[0].checked) {
+			$(this).toggle();
+		}*/
+		/*if ($(this).children('.check').checked) {
+			$(this).hide();
+		}*/
+	});
+	};
+

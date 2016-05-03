@@ -51,7 +51,7 @@ body {
 }
 
 .list {
-	width: 97.5%;
+	width: 98%;
     position: relative;
     top: 1.6em;
     padding: 1em;
@@ -74,12 +74,29 @@ body {
 	font-size: 2em;
 }
 
+#filter {
+    -webkit-appearance:none;
+    width:40px;
+    height:40px;
+    background-color:green;
+    border-radius:5px;
+    border: 2px solid #555;
+    position: relative;
+    top: 11.8em;
+    left: 3.7em;
+    
+}
+
+#filter:checked {
+    background-color: red;
+}
+
 .check {
    
-   -webkit-appearance:none;
+    -webkit-appearance:none;
     width:20px;
     height:20px;
-    background:red;
+    background-color:red;
     border-radius:5px;
     border:2px solid #555;
     margin-right: 1em;
@@ -88,7 +105,7 @@ body {
 }
 
 .check:checked {
-    background: green;
+    background-color: green;
 }
 
 .remove {
